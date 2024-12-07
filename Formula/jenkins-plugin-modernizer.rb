@@ -11,4 +11,7 @@ class JenkinsPluginModernizer < Formula
       #(bin/"jenkins-plugin-modernizer").write_env_script libexec/"bin/jenkins-plugin-modernizer", Language::Java.overridable_java_home_env
     end
   
+    test do
+      system bin/"jenkins-plugin-modernizer", "--version"
+    end
   end
