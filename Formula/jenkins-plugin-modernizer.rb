@@ -7,7 +7,8 @@ class JenkinsPluginModernizer < Formula
     
     def install
       libexec.install "jenkins-plugin-modernizer-499.vb_86f97f0b_197.jar"
-      bin.write_jar_script libexec/"jenkins-plugin-modernizer-499.vb_86f97f0b_197.jar", "jenkins-plugin-modernizer"
+      #bin.write_jar_script libexec/"jenkins-plugin-modernizer-499.vb_86f97f0b_197.jar", "jenkins-plugin-modernizer"
+      (bin/"jenkins-plugin-modernizer-499.vb_86f97f0b_197.jar").write_env_script libexec/"bin/jenkins-plugin-modernizer", Language::Java.overridable_java_home_env
     end
   
     test do
