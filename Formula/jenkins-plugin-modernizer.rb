@@ -6,8 +6,8 @@ class JenkinsPluginModernizer < Formula
     license "MIT"
     
     def install
-      libexec.install "jenkins-plugin-modernizer-499.vb_86f97f0b_197.jar"
-      bin.write_jar_script libexec/"jenkins-plugin-modernizer-499.vb_86f97f0b_197.jar", "jenkins-plugin-modernizer"
+      libexec.install "plugin-modernizer-cli-499.vb_86f97f0b_197.jar"
+      bin.write_jar_script libexec/"plugin-modernizer-cli-499.vb_86f97f0b_197.jar", "jenkins-plugin-modernizer"
       #(bin/"jenkins-plugin-modernizer").write_env_script libexec/"bin/jenkins-plugin-modernizer", Language::Java.overridable_java_home_env
     end
   
