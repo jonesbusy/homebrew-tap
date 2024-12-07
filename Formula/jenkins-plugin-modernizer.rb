@@ -6,8 +6,8 @@ class JenkinsPluginModernizer < Formula
     license "MIT"
     
     def install
-      libexec.install "jenkins-plugin-modernizer-#{version}.jar"
-      bin.write_jar_script libexec/"jenkins-plugin-modernizer-#{version}.jar", "jenkins-plugin-modernizer"
+      libexec.install "jenkins-plugin-modernizer-499.vb_86f97f0b_197.jar"
+      bin.write_jar_script libexec/"jenkins-plugin-modernizer-499.vb_86f97f0b_197.jar", "jenkins-plugin-modernizer"
     end
   
     test do
