@@ -1,14 +1,14 @@
 class PluginModernizer < Formula
     desc "Plugin Modernizer"
-    version "499.vb_86f97f0b_197".split(".")[0]
+    version "881.vb_87c73cc62db_".split(".")[0]
     homepage "https://github.com/jenkins-infra/plugin-modernizer-tool"
-    url "https://repo.jenkins-ci.org/artifactory/releases/io/jenkins/plugin-modernizer/plugin-modernizer-cli/499.vb_86f97f0b_197/plugin-modernizer-cli-499.vb_86f97f0b_197.jar"
-    sha256 "0827c8eaf17b7e3221c11b866f5851ce0cab6c35225d4ff38af22713680f845d"
+    url "https://repo.jenkins-ci.org/artifactory/releases/io/jenkins/plugin-modernizer/plugin-modernizer-cli/881.vb_87c73cc62db_/plugin-modernizer-cli-881.vb_87c73cc62db_.jar"
+    sha256 "df77d78b67c34f16471e46768fcd6b655147e9d5f9e003349970018666864ce1"
     license "MIT"
 
     def install
-      libexec.install "plugin-modernizer-cli-499.vb_86f97f0b_197.jar"
-      bin.write_jar_script libexec/"plugin-modernizer-cli-499.vb_86f97f0b_197.jar", "plugin-modernizer"
+      libexec.install "plugin-modernizer-cli-881.vb_87c73cc62db_.jar"
+      bin.write_jar_script libexec/"plugin-modernizer-cli-881.vb_87c73cc62db_.jar", "plugin-modernizer"
     end
 
     test do
