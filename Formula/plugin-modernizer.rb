@@ -1,5 +1,5 @@
-class JenkinsPluginModernizer < Formula
-    desc "Jenkins Plugin Modernizer"
+class PluginModernizer < Formula
+    desc "Plugin Modernizer"
     version "449"
     homepage "https://github.com/jenkins-infra/plugin-modernizer-tool"
     url "https://repo.jenkins-ci.org/artifactory/releases/io/jenkins/plugin-modernizer/plugin-modernizer-cli/499.vb_86f97f0b_197/plugin-modernizer-cli-499.vb_86f97f0b_197.jar"
@@ -8,11 +8,10 @@ class JenkinsPluginModernizer < Formula
     
     def install
       libexec.install "plugin-modernizer-cli-499.vb_86f97f0b_197.jar"
-      bin.write_jar_script libexec/"plugin-modernizer-cli-499.vb_86f97f0b_197.jar", "jenkins-plugin-modernizer"
-      #(bin/"jenkins-plugin-modernizer").write_env_script libexec/"bin/jenkins-plugin-modernizer", Language::Java.overridable_java_home_env
+      bin.write_jar_script libexec/"plugin-modernizer-cli-499.vb_86f97f0b_197.jar", "plugin-modernizer"
     end
   
     test do
-      system bin/"jenkins-plugin-modernizer", "--version"
+      system bin/"plugin-modernizer", "--version"
     end
   end
